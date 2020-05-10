@@ -1,0 +1,29 @@
+{% extends "result_layout.html" %}
+{% block content %}
+<div style="padding: 12px align:right">
+    <h5><a class="btn btn-primary" href="/">RETURN TO INPUT DATA PAGE</a></h5>
+</div>
+
+<div class="container-fluid">
+
+    {% for key1, value1 in results.items() %}
+    <h1>{{ key1 }}</h1>
+    {% for key, value in value1.items() %}
+    <dir>
+
+        {% if key != 'Time Taken:'%}
+        <h3 style="display: inline"> {{ key }} </h3>
+        <h2 style="display: inline"> {{ value }} </h2>
+        {% else %}
+        <small class="text-muted"> {{ key }} </small>
+        <small class="text-muted"> {{ value }} </small>
+        {% endif %}
+    </dir>
+    {% endfor %}
+    {% endfor %}
+
+</div>
+<div style="padding: 12px">
+    <h5><a class="btn btn-primary" href="/">RETURN TO INPUT DATA PAGE</a></h5>
+</div>
+{% endblock content %}

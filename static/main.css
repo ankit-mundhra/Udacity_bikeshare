@@ -1,0 +1,33 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h4, h5, h6 {
+  color: #222222;
+}
+
+h3 {
+    color: #9a2525
+}
+
+h2 {
+    color: #004085
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.article-title {
+    color: #444444;
+}
+
+.row {
+    width: 100%
+}
